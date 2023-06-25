@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="" type="image/x-icon">
+    <link href="fonts.css" rel="stylesheet">
+</head>
+
+<body onload="includeHTML(), showBin()">
+
+    <header w3-include-html="./header.html"></header>
+
+    <div class="side-menu">
+        <div class="icon-list">
+            <div class="menu-row">
+                <div class="circle" onmouseover="show()" onmouseleave="disappear()" id="circle-side-menu">
+                    <img src="./img/delete.svg">
+                </div>
+            </div>
+        </div>
+        <div class="icon-description-container" id="icon-description-container">
+            <div class="icon-description">Papierkorb</div>
+        </div>
+    </div>
+
+    <div class="notes-container" id="bin-container">
+        
+        <div class="bin-area" id="bin-area">
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
